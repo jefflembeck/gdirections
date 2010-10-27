@@ -36,6 +36,10 @@ module Gdirections
       self.routes.first
     end
     
+    def legs
+      self.route.legs
+    end
+    
     def distance_in_miles
       (self.route.legs.map{|l| l.duration.value}.inject{|v,l| v+l} / 1610.22).round
     end

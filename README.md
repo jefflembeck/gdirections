@@ -1,4 +1,4 @@
-gdirections
+<h1>gdirections</h1>
 
 A quick wrapper for Google Maps directions API that support waypoints.
 
@@ -11,7 +11,9 @@ route = result.routes.first
 puts route.legs.first.steps.map{|s| "#{s.html_instructions}, #{s.distance.text}"}
 </pre>
 
-== Note on Patches/Pull Requests
+Patches and additions are quite welcome. Perhaps you have a clever shortcut or calculation you could add?
+
+<h2>Note on Patches/Pull Requests</h2>
  
 * Fork the project.
 * Make your feature addition or bug fix.
@@ -21,6 +23,6 @@ puts route.legs.first.steps.map{|s| "#{s.html_instructions}, #{s.distance.text}"
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-== Copyright
+<h2>Copyright</h2>
 
 Copyright (c) 2010 Andrew Stevens. See LICENSE for details.
