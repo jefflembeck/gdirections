@@ -1,6 +1,15 @@
-= gdirections
+gdirections
 
-Description goes here.
+A quick wrapper for Google Maps directions API that support waypoints.
+
+Returns an object version of the directions results, http://code.google.com/apis/maps/documentation/directions/#JSON
+
+Example:
+<pre>
+result = Gdirections.get_directions(:origin => "Bevely Hills, CA 90210", :destination => "Minneapolis, MN 55141")
+route = result.routes.first
+puts route.legs.first.steps.map{|s| "#{s.html_instructions}, #{s.distance.text}"}
+</pre>
 
 == Note on Patches/Pull Requests
  
