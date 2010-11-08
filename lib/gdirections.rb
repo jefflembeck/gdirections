@@ -14,7 +14,7 @@ module Gdirections
       :mode => :driving,
       :sensor => :false,
       :waypoints => nil,
-      :optimize => 'true'
+      :optimize => true
     }.merge(options)
     
     raise ArgumentError, "Origin required" if options[:origin].nil?
